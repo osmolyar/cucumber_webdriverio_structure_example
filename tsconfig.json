@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "out",
+
+    // Relevant for ts-node:
+    // "baseUrl": ".",
+    // "paths": {
+    //   "*": [
+    //     "./*"
+    //   ],
+    //   "src/*": [
+    //     "./src/*"
+    //   ]
+    // },
+
+    "types": [
+      "node",
+      "@wdio/sync",
+      "@wdio/cucumber-framework",
+      "chai",
+      "cucumber"
+    ],
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "downlevelIteration": true,
+    "typeRoots": [
+      "./common/declarations"
+    ],
+    "allowSyntheticDefaultImports": true
+  }
+}
